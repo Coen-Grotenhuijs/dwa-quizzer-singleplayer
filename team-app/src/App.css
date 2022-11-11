@@ -1,0 +1,202 @@
+.app {
+  display: grid;
+  place-items: center;
+  background: rgb(245,255,84);
+  background: radial-gradient(circle, rgba(245,255,84,1) 0%, rgba(225,155,155,1) 50%, rgba(32,43,155,1) 100%);
+  height: 100vh;
+}
+
+.app__body {
+  display: flex;
+  width: 70vw;
+  background-color: #ededed;
+  -webkit-box-shadow: -1px 4px 20px -6px rgba(0,0,0,0.2);
+  -moz-box-shadow: -1px 4px 20px -6px rgba(0,0,0,0.2);
+  box-shadow: -1px 4px 20px -6px rgba(0,0,0,0.2);
+}
+
+.textCenter {
+  text-align: center;
+}
+/*Start CSS startscreen */
+
+.startscreen {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.startscreen__header {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid lightgray;
+}
+
+.startscreen__headerInfo {
+  flex: 1;
+  padding-left: 20px;
+  text-align: center;
+}
+.startscreen__titel {
+  position: relative;
+  margin: 0 auto;
+  font-size: 20px;
+  padding: 10px;
+  background-color: white;
+  border-radius: 10px;
+  width: 100%;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.startscreen__name {
+  position: absolute;
+  top: -15px;
+  font-weight: 800;
+  font-size: xx-small;
+}
+
+
+.startscreen__headerInfo > h3 {
+  margin-bottom: 3px;
+  font-weight: 500;
+}
+
+.startscreen__headerInfo > p {
+  color: gray;
+}
+
+.startscreen__headerRight {
+  display: flex;
+  justify-content: space-between;
+  min-width: 100px;
+}
+
+.startscreen__body {
+  flex: 1;
+  background-color: #e5ddd5;
+  padding: 30px;
+}
+.startscreen__body__titel {
+  font-size: 30px;
+  text-align: center;
+  margin-top: 10%;
+}
+
+
+.startscreen__input {
+  font-size: 20px;
+  padding: 10px;
+  margin: 10px;
+  width: 100%;
+  text-align: center;
+}
+
+.startscreen__footer > form {
+  flex: 1;
+  display: flex;
+  height: 30%;
+}
+
+.startscreen__footer > form > input {
+  flex: 1;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+  padding: 10px;
+  border: none;
+}
+.startscreen__footer > form > button {
+  display: none;
+}
+
+.startscreen__footer > .MuiSvgIcon-root {
+  padding: 10px;
+  color: gray;
+}
+
+button {
+  padding: 10px;
+  margin-top: 10px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.joinQuiz__footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border-top: 1px solid lightgray;
+}
+
+.joinQuiz__body__quiznameInput {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 20px;
+}
+
+/*CSS LOADER*/
+.lds-ellipsis {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.lds-ellipsis div {
+  position: absolute;
+  top: 33px;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background: #fff;
+  animation-timing-function: cubic-bezier(0, 1, 1, 0);
+}
+.lds-ellipsis div:nth-child(1) {
+  left: 8px;
+  animation: lds-ellipsis1 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(2) {
+  left: 8px;
+  animation: lds-ellipsis2 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(3) {
+  left: 32px;
+  animation: lds-ellipsis2 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(4) {
+  left: 56px;
+  animation: lds-ellipsis3 0.6s infinite;
+}
+@keyframes lds-ellipsis1 {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes lds-ellipsis3 {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+@keyframes lds-ellipsis2 {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(24px, 0);
+  }
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
